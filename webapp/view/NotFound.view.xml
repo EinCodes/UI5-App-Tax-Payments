@@ -1,16 +1,14 @@
-<mvc:View
-	controllerName="ein.codes.tax.payment.controller.NotFound"
+<mvc:View controllerName="ein.codes.tax.payment.controller.NotFound"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
 
-	<MessagePage
-		title="{i18n>notFoundTitle}"
-		text="{i18n>notFoundText}"
+	<MessagePage description=""
+		text="{i18n>notFound.label.404}"
 		icon="sap-icon://document"
-		id="page"
-		description="">
+		showHeader="false">
 		<customDescription>
-			<Link id="link" text="{i18n>backToWorklist}" press=".onLinkPressed"/>
+			<Link text="{i18n>notFound.label.Return}"
+				press=".onLinkPressed" />
 		</customDescription>
 	</MessagePage>
 

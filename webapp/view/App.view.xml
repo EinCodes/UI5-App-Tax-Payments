@@ -1,14 +1,12 @@
-<mvc:View
-	controllerName="ein.codes.tax.payment.controller.App"
+<mvc:View controllerName="ein.codes.tax.payment.controller.App"
+	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
+	xmlns="sap.m">
 
 	<Shell>
-	<App
-		id="app"
-		busy="{appView>/busy}"
-		busyIndicatorDelay="{appView>/delay}"/>
+		<App id="app"
+			busy="{appView>/busy}"
+			busyIndicatorDelay="{appView>/delay}" />
 	</Shell>
 
 </mvc:View>
