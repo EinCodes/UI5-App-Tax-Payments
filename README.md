@@ -7,16 +7,17 @@
 |**Generation Platform**<br>Visual Studio Code|
 |**Floorplan Used**<br>Basic|
 |**Service Type**<br>SAP System (ABAP On Premise)|
-|**Service URL**<br>{ServiceRootURI}/sap/opu/odata/EIN/TAX_PAYMENT_SRV
+|**Service URL**<br>{ServiceRootURI}/sap/opu/odata/EIN/TAX_PAYMENT_SRV|
+|**Service Repository**<br><a href="https://github.com/EinCodes/GW-API-Tax-Payments/tree/main/Data">GW-API-Tax-Payments</a>|
 |**Module Name**<br>payment|
 |**Application Title**<br>Tax Payment|
 |**Namespace**<br>ein.codes.tax|
 |**UI5 Theme**<br>sap_fiori_3|
 |**UI5 Version**<br>1.84.10|
 
-## payment
+## Tax Payment 
 
-Tax Payment
+Tax Payment UI5 Application
 
 ### Starting the generated app
 
