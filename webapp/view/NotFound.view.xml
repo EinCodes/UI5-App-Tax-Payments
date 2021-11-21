@@ -1,6 +1,6 @@
 <mvc:View controllerName="ein.codes.tax.payment.controller.NotFound"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc">
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
 
 	<MessagePage description=""
 		text="{i18n>notFound.label.404}"

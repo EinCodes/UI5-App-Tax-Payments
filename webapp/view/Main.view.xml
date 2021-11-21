@@ -1,0 +1,432 @@
+<!-- controllerName="ein.codes.tax.payment.controller.Main" -->
+<mvc:View xmlns:st="sap.ui.comp.smarttable"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.f"
+    xmlns:ux="sap.uxap"
+    xmlns="sap.m">
+
+
+    <ux:ObjectPageLayout upperCaseAnchorBar="false"
+        headerContentPinnable="false">
+
+        <ux:headerTitle>
+            <ux:ObjectPageDynamicHeaderTitle>
+                <ux:heading>
+                    <Title text="Application Page Title" />
+                </ux:heading>
+                <ux:actions>
+                    <Button text="Action 01" />
+                    <Button text="Action 02" />
+                </ux:actions>
+                <ux:snappedContent>
+                    <Text text="ID 6-626068000000 • EIN1 • 11.2021" />
+                </ux:snappedContent>
+            </ux:ObjectPageDynamicHeaderTitle>
+        </ux:headerTitle>
+
+        <ux:headerContent>
+            <FlexBox wrap="{= ${device>/system/phone} ? 'Wrap' : 'NoWrap' }"
+                fitContainer="true"
+                alignItems="Start">
+                <VBox width="100%">
+                    <ObjectAttribute title="Document ID"
+                        text="6-626068000000"
+                        class="sapUiTinyMarginBottom" />
+                    <ObjectAttribute title="Company"
+                        text="Ein Codes Inc. (EIN1)"
+                        class="sapUiTinyMarginBottom" />
+                    <layoutData>
+                        <FlexItemData growFactor="1" />
+                    </layoutData>
+                </VBox>
+                <VBox width="100%">
+                    <ObjectAttribute title="Period"
+                        text="11.2021"
+                        class="sapUiTinyMarginBottom" />
+                    <layoutData>
+                        <FlexItemData growFactor="1" />
+                    </layoutData>
+                </VBox>
+            </FlexBox>
+        </ux:headerContent>
+
+        <ux:sections>
+            <ux:ObjectPageSection title="Tax Document"
+                titleUppercase="false">
+                <ux:subSections>
+                    <ux:ObjectPageSubSection title="Summary">
+                        <l:BlockLayout background="Light">
+                            <l:BlockLayoutRow>
+                                <l:BlockLayoutCell>
+                                    <VBox>
+                                        <Title text="Tax 1P Summary"
+                                            class="sapUiSmallMarginBottom"
+                                            titleStyle="H5"
+                                            level="H5" />
+                                        <List>
+                                            <items>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Debits" />
+                                                        <ObjectNumber number="12,986.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Withholdings" />
+                                                        <ObjectNumber number="0.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Tax Due" />
+                                                        <ObjectNumber number="2,142.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Credits" />
+                                                        <ObjectNumber number="986.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Paid" />
+                                                        <ObjectNumber number="10,844.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        alignContent="Center"
+                                                        alignItems="Center"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Adjust" />
+                                                        <Input showValueHelp="true"
+                                                            valueHelpIconSrc="sap-icon://future"
+                                                            class="sapUiTinyMarginBegin" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="To Pay" />
+                                                        <ObjectNumber number="2,142.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                            </items>
+                                        </List>
+                                        <layoutData>
+                                            <FlexItemData growFactor="1" />
+                                        </layoutData>
+                                    </VBox>
+                                </l:BlockLayoutCell>
+                                <l:BlockLayoutCell>
+                                    <VBox>
+                                        <Title text="Tax 1C Summary"
+                                            class="sapUiSmallMarginBottom"
+                                            titleStyle="H5"
+                                            level="H5" />
+                                        <List>
+                                            <items>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Debits" />
+                                                        <ObjectNumber number="12,986.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Withholdings" />
+                                                        <ObjectNumber number="0.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Tax Due" />
+                                                        <ObjectNumber number="2,142.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Credits" />
+                                                        <ObjectNumber number="986.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Paid" />
+                                                        <ObjectNumber number="10,844.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        alignContent="Center"
+                                                        alignItems="Center"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Adjust" />
+                                                        <Input showValueHelp="true"
+                                                            valueHelpIconSrc="sap-icon://future"
+                                                            class="sapUiTinyMarginBegin" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="To Pay" />
+                                                        <ObjectNumber number="2,142.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                            </items>
+                                        </List>
+                                        <layoutData>
+                                            <FlexItemData growFactor="1" />
+                                        </layoutData>
+                                    </VBox>
+                                </l:BlockLayoutCell>
+                                <l:BlockLayoutCell>
+                                    <VBox>
+                                        <Title text="Tax 2P Summary"
+                                            class="sapUiSmallMarginBottom"
+                                            titleStyle="H5"
+                                            level="H5" />
+                                        <List>
+                                            <items>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Debits" />
+                                                        <ObjectNumber number="12,986.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Withholdings" />
+                                                        <ObjectNumber number="0.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Tax Due" />
+                                                        <ObjectNumber number="2,142.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Credits" />
+                                                        <ObjectNumber number="986.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Paid" />
+                                                        <ObjectNumber number="10,844.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        alignContent="Center"
+                                                        alignItems="Center"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Adjust" />
+                                                        <Input showValueHelp="true"
+                                                            valueHelpIconSrc="sap-icon://future"
+                                                            class="sapUiTinyMarginBegin" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="To Pay" />
+                                                        <ObjectNumber number="2,142.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                            </items>
+                                        </List>
+                                        <layoutData>
+                                            <FlexItemData growFactor="1" />
+                                        </layoutData>
+                                    </VBox>
+                                </l:BlockLayoutCell>
+                                <l:BlockLayoutCell>
+                                    <VBox>
+                                        <Title text="Tax 2C Summary"
+                                            class="sapUiSmallMarginBottom"
+                                            titleStyle="H5"
+                                            level="H5" />
+                                        <List>
+                                            <items>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Debits" />
+                                                        <ObjectNumber number="12,986.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Withholdings" />
+                                                        <ObjectNumber number="0.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Tax Due" />
+                                                        <ObjectNumber number="2,142.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Credits" />
+                                                        <ObjectNumber number="986.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Paid" />
+                                                        <ObjectNumber number="10,844.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        alignContent="Center"
+                                                        alignItems="Center"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="Adjust" />
+                                                        <Input showValueHelp="true"
+                                                            valueHelpIconSrc="sap-icon://future"
+                                                            class="sapUiTinyMarginBegin" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                                <CustomListItem>
+                                                    <HBox justifyContent="SpaceBetween"
+                                                        class="sapUiTinyMargin">
+                                                        <ObjectAttribute title="To Pay" />
+                                                        <ObjectNumber number="2,142.00"
+                                                            emphasized="false"
+                                                            unit="BRL" />
+                                                    </HBox>
+                                                </CustomListItem>
+                                            </items>
+                                        </List>
+                                        <layoutData>
+                                            <FlexItemData growFactor="1" />
+                                        </layoutData>
+                                    </VBox>
+                                </l:BlockLayoutCell>
+                            </l:BlockLayoutRow>
+                        </l:BlockLayout>
+                    </ux:ObjectPageSubSection>
+                </ux:subSections>
+                <ux:subSections>
+                    <ux:ObjectPageSubSection title="Debits">
+                        <st:SmartTable id="smart-table-debits"
+                            tableBindingPath="/PagamentoSet(Bukrs='1000',Perio='201405')/Debitos"
+                            persistencyKey="PK-TAX-DEBITS-01"
+                            showTablePersonalisation="true"
+                            initiallyVisibleFields="Bukrs"
+                            showVariantManagement="true"
+                            showFullScreenButton="true"
+                            enableAutoBinding="true"
+                            entitySet="DebitoSet"
+                            header="Entries" />
+                    </ux:ObjectPageSubSection>
+                </ux:subSections>
+                <ux:subSections>
+                    <ux:ObjectPageSubSection title="Credits">
+                        <st:SmartTable id="smart-table-credits"
+                            tableBindingPath="/PagamentoSet(Bukrs='1000',Perio='201405')/Creditos"
+                            persistencyKey="PK-TAX-CREDITS-01"
+                            showTablePersonalisation="true"
+                            initiallyVisibleFields="Bukrs"
+                            showVariantManagement="true"
+                            showFullScreenButton="true"
+                            enableAutoBinding="true"
+                            entitySet="CreditoSet"
+                            header="Entries" />
+                    </ux:ObjectPageSubSection>
+                </ux:subSections>
+            </ux:ObjectPageSection>
+            <ux:ObjectPageSection>
+                <ux:subSections>
+                    <ux:ObjectPageSubSection >
+                        <VBox />
+                    </ux:ObjectPageSubSection>
+                </ux:subSections>
+            </ux:ObjectPageSection>
+        </ux:sections>
+
+
+    </ux:ObjectPageLayout>
+
+
+
+
+
+
+
+</mvc:View>
